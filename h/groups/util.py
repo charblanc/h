@@ -21,3 +21,15 @@ class WorldGroup(object):
             (security.Allow, 'authority:{}'.format(self.auth_domain), 'write'),
             security.DENY_ALL,
         ]
+
+    @property
+    def name(self):
+        return 'Public'
+
+    @property
+    def pubid(self):
+        return '__world__'
+
+    @property
+    def is_public(self):
+        return True
