@@ -21,6 +21,8 @@ if not os.environ.get('GUNICORN_STATS_DISABLE', None):
         _port = os.environ.get('STATSD_PORT', '8125')
         statsd_host = '{}:{}'.format(_host, _port)
 
+    statsd_prefix = os.environ.get('STATSD_PREFIX', '')
+
 
 def post_fork(server, worker):
     # Support back-ported SSL changes on Debian / Ubuntu

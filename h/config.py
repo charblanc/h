@@ -57,6 +57,7 @@ SETTINGS = [
     EnvSetting('sqlalchemy.url', 'DATABASE_URL', type=database_url),
     EnvSetting('statsd.host', 'STATSD_HOST'),
     EnvSetting('statsd.port', 'STATSD_PORT', type=int),
+    EnvSetting('statsd.prefix', 'STATSD_PREFIX'),
 
     # Configuration for Pyramid
     EnvSetting('secret_key', 'SECRET_KEY', type=bytes),
