@@ -7,7 +7,7 @@ from pyramid import security
 
 class WorldGroup(object):
     """
-    A Group object for the __world__ group, it only implements __acl__.
+    A Group object for the __world__ group.
 
     This is so we don't have to store a __world__ group in the database.
     """
